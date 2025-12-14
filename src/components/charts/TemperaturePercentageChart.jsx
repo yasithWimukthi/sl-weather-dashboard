@@ -1,67 +1,45 @@
 import {
     Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Tooltip
+    ArcElement,
+    Tooltip,
+    Legend
 } from "chart.js";
 
-import { Bar } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import { FaTemperatureHigh } from "react-icons/fa";
 import Card from "../layout/Card";
 
 ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Tooltip
+    ArcElement,
+    Tooltip,
+    Legend
 );
 
 const TemperaturePercentageChart = () => {
 
+    const percentage = 58.3;
+
     const data = {
-        labels: ["Colombo", "Jaffna", "Anuradhapura", "Kandy", "Nuwara Eliya"],
+        labels: ["Above 30°C", "Below 30°C"],
         datasets: [
             {
-                data: [58.3, 75.0, 83.3, 41.6, 0],
-                backgroundColor: "#fb8c00",
-                borderRadius: 8
+                data: [percentage, 100 - percentage],
+                backgroundColor: ["#fb8c00", "#eceff1"]
             }
         ]
     };
 
-    const options = {
-        responsive: true,
-        plugins: {
-            legend: { display: false },
-            tooltip: {
-                callbacks: {
-                    label: (ctx) => `${ctx.raw}%`
-                }
-            }
-        },
-        scales: {
-            y: {
-                max: 100,
-                title: {
-                    display: true,
-                    text: "Percentage (%)"
-                }
-            }
-        }
-    };
-
     return (
         <Card
-            title="Months with Mean Temperature > 30°C"
-            icon={<FaTemperatureHigh color="#fb8c00" />}
+            title="Months Above 30°C (Colombo - 2023)"
+            icon={<FaTemperatureHigh color="#fb8c00"/>}
         >
-            <p style={{ fontSize: "13px", color: "#607d8b" }}>
-                Percentage of months exceeding 30°C in 2023
-            </p>
-            <Bar data={data} options={options} />
+                <Doughnut data={data} />
+                <p style={{ textAlign: "center", fontWeight: "600" }}>
+            {percentage}% of months exceeded 30°C
+        </p>
         </Card>
     );
-};
+}
 
 export default TemperaturePercentageChart;
