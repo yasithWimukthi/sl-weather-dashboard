@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "precipitationThreshold_mm": 100,
+    "windGustThreshold_kmh": 50
+  },
+  "districts": [
+    {
+      "district": "Colombo",
+      "extremeDays": 145
+    },
+    {
+      "district": "Galle",
+      "extremeDays": 168
+    },
+    {
+      "district": "Jaffna",
+      "extremeDays": 62
+    },
+    {
+      "district": "Batticaloa",
+      "extremeDays": 91
+    },
+    {
+      "district": "Badulla",
+      "extremeDays": 104
+    }
+  ]
+}

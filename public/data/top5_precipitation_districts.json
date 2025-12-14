@@ -1,0 +1,25 @@
+{
+  "yearRange": "2010 - 2024",
+  "topDistricts": [
+    {
+      "district": "Galle",
+      "totalPrecipitation_mm": 48750
+    },
+    {
+      "district": "Colombo",
+      "totalPrecipitation_mm": 46230
+    },
+    {
+      "district": "Ratnapura",
+      "totalPrecipitation_mm": 45110
+    },
+    {
+      "district": "Kandy",
+      "totalPrecipitation_mm": 42980
+    },
+    {
+      "district": "Kalutara",
+      "totalPrecipitation_mm": 41860
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "year": 2023,
+  "districts": [
+    {
+      "district": "Colombo",
+      "percentageAbove30": 58.3
+    },
+    {
+      "district": "Jaffna",
+      "percentageAbove30": 75.0
+    },
+    {
+      "district": "Anuradhapura",
+      "percentageAbove30": 83.3
+    },
+    {
+      "district": "Kandy",
+      "percentageAbove30": 41.6
+    },
+    {
+      "district": "Nuwara Eliya",
+      "percentageAbove30": 0.0
+    }
+  ]
+}

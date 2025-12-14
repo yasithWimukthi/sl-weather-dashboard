@@ -1,0 +1,34 @@
+{
+  "districts": [
+    {
+      "district": "Colombo",
+      "mostPrecipitousMonth": "October",
+      "averagePrecipitation_mm": 340,
+      "season": "Second Inter-Monsoon"
+    },
+    {
+      "district": "Kandy",
+      "mostPrecipitousMonth": "November",
+      "averagePrecipitation_mm": 290,
+      "season": "Second Inter-Monsoon"
+    },
+    {
+      "district": "Galle",
+      "mostPrecipitousMonth": "June",
+      "averagePrecipitation_mm": 380,
+      "season": "South-West Monsoon"
+    },
+    {
+      "district": "Jaffna",
+      "mostPrecipitousMonth": "December",
+      "averagePrecipitation_mm": 210,
+      "season": "North-East Monsoon"
+    },
+    {
+      "district": "Badulla",
+      "mostPrecipitousMonth": "October",
+      "averagePrecipitation_mm": 260,
+      "season": "Second Inter-Monsoon"
+    }
+  ]
+}
